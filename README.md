@@ -29,3 +29,40 @@ The app is currently utilizing my DeepInfra key. This allows for free interactio
 
 
 
+## Installation
+
+To run this application on your local machine, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone [your-repository-link]
+   cd [repository-name]
+   ```
+
+2. **Install the required packages:**
+
+   Ensure that you have Python installed on your system. Then, install the required packages using the following command:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set up the API token:**
+
+   The app requires a valid [Replicate](https://replicate.com/) API token to interact with the Code Llama 70B Instruct model. Add your API token to the .streamlit/secrets.toml file as follows:
+
+   ```toml
+   # .streamlit/secrets.toml
+   api_key = "your_deep_infra_api_key"
+   ```
+
+4. **Run the app:**
+
+   Start the Streamlit server by executing:
+
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+   The app should now be running on your local server (usually <http://localhost:8501>).
